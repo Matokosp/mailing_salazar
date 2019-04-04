@@ -1,0 +1,201 @@
+@media screen{
+  @font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 100;
+  src: local('Montserrat Thin'), local('Montserrat-Thin'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUQjIg1_i6t8kCHKm45_QpRyS7m.woff2) format('woff2');
+}
+
+  @font-face {
+ font-family: 'Montserrat';
+ font-style: normal;
+ font-weight: 400;
+ src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v13/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_dJE3gnD_g.woff2) format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Montserrat Black'), local('Montserrat-Black'), url(https://fonts.gstatic.com/s/montserrat/v13/JTURjIg1_i6t8kCHKm45_epG3gnD_g.woff2) format('woff2');
+}
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", "Lucida Grande", "Lucida Sans Unicode", Tahoma, sans-serif;
+}
+
+.email-background {
+  background: #EEEE;
+  padding: 10px;
+  margin: 0;
+}
+
+.pre-header {
+  background: #eee;
+  color: #eee;
+  font-size: 5px;
+}
+
+.email-container {
+  max-width: 700px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.auto {
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+
+.auto_img {
+  display: block;
+  width: 100%;
+}
+
+.auto_info {
+  display: block;
+  width: 100%;
+  text-align: right;
+}
+
+.auto-right {
+  margin-top: 20px;
+}
+
+.auto_info_title {
+  margin-bottom: 10px;
+}
+
+.auto_info h2 {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  font-weight: 900;
+  margin: 0.83em 0 0 0;
+}
+
+.yellow_separator_title {
+  display: inline-block;
+  width: 50%;
+  height: 3px;
+  background-color: #EFCF30;
+  margin-bottom: 5px;
+}
+
+.auto_info_item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.auto_info_item span {
+  margin: 4px 0;
+}
+
+.auto_info_item span:nth-child(1) {
+  font-weight: 700;
+  color: #1D3767;
+}
+
+.cotiza_button {
+  display: block;
+  margin: 15px auto 0 auto;
+  background-color: #003399;
+  font-size: 1.2em;
+  font-weight: 900;
+  color: #fff;
+  width: 75%;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.yellow_separator {
+  height: 3px;
+  background-color: #EFCF30;
+}
+
+footer {
+  background-color: #1D3767;
+  margin: 0;
+}
+
+.contactos {
+  display: flex;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 530px) {
+  .auto_img {
+    display: inline-block;
+    width: 45%;
+    margin-right: 4%;
+    vertical-align: middle;
+  }
+
+  .auto_info {
+    display: inline-block;
+    width: 45%;
+    margin-left: 4%;
+    vertical-align: middle;
+  }
+
+  .auto-right {
+    margin: 0 0 0 4%;
+  }
+
+  .auto-left {
+    margin-left: 0;
+    margin-right: 4%;
+  }
+
+  footer {
+    position: relative;
+  }
+
+  .contactos {
+    vertical-align: middle;
+    width: 48%;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .footer-logo {
+    vertical-align: middle;
+    width: 40%;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .separation-white {
+    background-color: #fff;
+    height: 70%;
+    width: 2px;
+    position: absolute;
+    top: 15%;
+    right: 0;
+  }
+
+}
