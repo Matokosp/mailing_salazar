@@ -64,31 +64,30 @@ img {
   width: 100%;
   padding: 30px;
   position: relative;
+  text-align: center;
 }
 
 .auto_img {
-  display: block;
+  display: inline-block;
   width: 100%;
+  vertical-align: middle;
 }
 
 .auto_info {
-  display: block;
+  display: inline-block;
   width: 100%;
-  text-align: right;
-}
-
-.auto-right {
-  margin-top: 20px;
+  vertical-align: middle;
 }
 
 .auto_info_title {
+  text-align: right;
   margin-bottom: 10px;
 }
 
 .auto_info h2 {
   text-align: right;
   text-transform: uppercase;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: 900;
   margin: 0.83em 0 0 0;
 }
@@ -101,18 +100,32 @@ img {
   margin-bottom: 5px;
 }
 
-.auto_info_item {
-  display: flex;
-  justify-content: space-between;
-}
-
-.auto_info_item span {
-  margin: 4px 0;
-}
-
-.auto_info_item span:nth-child(1) {
+.category {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
   font-weight: 700;
   color: #1D3767;
+  width: 50%;
+  text-align: left;
+}
+
+.category li {
+  margin: 5px 0;
+  font-size: 90%;
+}
+
+.value {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+  width: 43%;
+  text-align: left;
+}
+
+.value li {
+  margin: 5px 0;
+  font-size: 90%;
 }
 
 .cotiza_button {
@@ -137,65 +150,32 @@ img {
 footer {
   background-color: #1D3767;
   margin: 0;
+  position: relative;
 }
 
 .contactos {
   display: flex;
-  padding: 20px;
-  margin-bottom: 20px;
+  vertical-align: middle;
+  width: 48%;
+  margin-bottom: 0;
+  position: relative;
+  padding: 15px 10px;
 }
 
-@media (min-width: 530px) {
-  .auto_img {
-    display: inline-block;
-    width: 45%;
-    margin-right: 4%;
-    vertical-align: middle;
-  }
+.separation-white {
+  background-color: #fff;
+  height: 70%;
+  width: 2px;
+  position: absolute;
+  top: 15%;
+  right: 0;
+  transform: translateX(15px);
+}
 
-  .auto_info {
-    display: inline-block;
-    width: 45%;
-    margin-left: 4%;
-    vertical-align: middle;
-  }
-
-  .auto-right {
-    margin: 0 0 0 4%;
-  }
-
-  .auto-left {
-    margin-left: 0;
-    margin-right: 4%;
-  }
-
-  footer {
-    position: relative;
-  }
-
-  .contactos {
-    vertical-align: middle;
-    width: 48%;
-    margin-bottom: 0;
-    position: relative;
-  }
-
-  .footer-logo {
-    vertical-align: middle;
-    width: 40%;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
-
-  .separation-white {
-    background-color: #fff;
-    height: 70%;
-    width: 2px;
-    position: absolute;
-    top: 15%;
-    right: 0;
-  }
-
+.footer-logo {
+  width: 40%;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
